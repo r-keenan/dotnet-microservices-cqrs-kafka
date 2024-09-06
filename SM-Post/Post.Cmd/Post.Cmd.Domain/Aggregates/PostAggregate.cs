@@ -62,7 +62,7 @@ namespace Post.Cmd.Domain
 
         public void Apply(MessageUpdatedEvent @event)
         {
-            _id = @event.Id,
+            _id = @event.Id;
         }
     
         public void LikePost()
