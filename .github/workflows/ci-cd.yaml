@@ -8,6 +8,9 @@ on:
     branches:
       - main
 
+env:
+  SLN_PATH: ../../SM-Post/SM-Post.sln
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -22,10 +25,10 @@ jobs:
           dotnet-version: "8.0.x"
 
       - name: Restore dependencies
-        run: dotnet restore
+        run: dotnet restore ${{ env.SLN_PATH }}
 
       - name: Build
-        run: dotnet build --configuration Release --no-restore
+        run: dotnet build ${{ env.SLN_PATH }} --configuration Release --no-restore
 
       - name: Test
-        run: dotnet test --no-restore --verbosity normal
+        run: dotnet test ${{ env.SLN_PATH }} --no-restore --verbosity normal
