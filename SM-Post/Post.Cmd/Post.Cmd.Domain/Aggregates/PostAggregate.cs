@@ -45,17 +45,17 @@ namespace Post.Cmd.Domain
         {
             if (!_active)
             {
-                throw InvalidOperationException("You cannot edit the message of an inactive post!");
+                throw new InvalidOperationException("You cannot edit the message of an inactive post!");
             }
 
             if (string.IsNullOrWhiteSpace(message))
             {
-                throw InvalidOperationException($"The value of {nameof(message)} cannot be null or empty. Please provide a valid {nameof(message)}!");
+                throw new InvalidOperationException($"The value of {nameof(message)} cannot be null or empty. Please provide a valid {nameof(message)}!");
             }
 
             RaiseEvent(new MessageUpdatedEvent
             {
-                Id = id,
+                Id = _id,
                 Message = message
             });
         }
@@ -92,7 +92,7 @@ namespace Post.Cmd.Domain
 
             if (string.IsNullOrWhiteSpace(comment))
             {
-                throw InvalidOperationException($"The value of {nameof(comment)} cannot be null or empty. Please provide a valid {nameof(comment)}!");
+                throw new InvalidOperationException($"The value of {nameof(comment)} cannot be null or empty. Please provide a valid {nameof(comment)}!");
             }
 
             RaiseEvent(new CommentAddedEvent
