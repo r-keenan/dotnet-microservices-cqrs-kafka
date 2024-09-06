@@ -7,11 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CQRS.Core", "..\CQRS-ES\CQR
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Post.Cmd", "Post.Cmd", "{C47FB568-02C9-44E4-9402-F51C60AD0D7C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Post.Cmd.Api", "Post.Cmd\Post.cmd.Api\Post.Cmd.Api.csproj", "{78F6530C-2C3B-4245-8B89-8B7D0A06D2CA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Post.Cmd.Api", "Post.Cmd\Post.Cmd.Api\Post.Cmd.Api.csproj", "{78F6530C-2C3B-4245-8B89-8B7D0A06D2CA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Post.Cmd.Domain", "Post.Cmd\Post.cmd.Domain\Post.Cmd.Domain.csproj", "{E11F92EB-79E0-4D0C-BFE2-229685A7C731}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Post.Cmd.Domain", "Post.Cmd\Post.Cmd.Domain\Post.Cmd.Domain.csproj", "{E11F92EB-79E0-4D0C-BFE2-229685A7C731}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Post.Cmd.Infrastructure", "Post.Cmd\Post.cmd.Infrastructure\Post.Cmd.Infrastructure.csproj", "{9B4A9E88-DBE4-4DB2-9AFE-7C5293CC1E82}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Post.Cmd.Infrastructure", "Post.Cmd\Post.Cmd.Infrastructure\Post.Cmd.Infrastructure.csproj", "{9B4A9E88-DBE4-4DB2-9AFE-7C5293CC1E82}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Post.Query", "Post.Query", "{307FBB7E-D4AC-4B36-9449-762B8A27F953}"
 EndProject
