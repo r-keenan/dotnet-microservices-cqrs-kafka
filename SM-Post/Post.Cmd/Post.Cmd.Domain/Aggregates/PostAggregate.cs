@@ -30,7 +30,7 @@ namespace Post.Cmd.Domain
                 Id = id,
                 Author = author,
                 Message = message,
-                DatePosted = DateTime.Now()
+                DatePosted = DateTime.Now
             });
         }
 
