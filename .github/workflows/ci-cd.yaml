@@ -9,7 +9,7 @@ on:
       - main
 
 env:
-  SLN_PATH: ../../SM-Post/SM-Post.sln
+  SLN_PATH: ./SM-Post/SM-Post.sln
 
 jobs:
   build:
