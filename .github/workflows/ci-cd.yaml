@@ -16,9 +16,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Check solution file
-        run: cat ${{ env.SLN_PATH }}
-
       - name: Checkout code
         uses: actions/checkout@v3
 
@@ -26,6 +23,9 @@ jobs:
         uses: actions/setup-dotnet@v3
         with:
           dotnet-version: "8.0.x"
+
+      - name: Check solution file
+        run: cat ${{ env.SLN_PATH }}
 
       - name: Restore dependencies
         run: dotnet restore ${{ env.SLN_PATH }}
