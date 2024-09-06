@@ -16,6 +16,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Check solution file
+        run: cat ${{ env.SLN_PATH }}
+
       - name: Checkout code
         uses: actions/checkout@v3
 
