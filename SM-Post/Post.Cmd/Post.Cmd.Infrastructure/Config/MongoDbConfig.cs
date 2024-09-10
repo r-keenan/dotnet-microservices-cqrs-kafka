@@ -1,4 +1,4 @@
-namespace CQRS.Core.Infrastructure.Config;
+namespace Post.Cmd.Infrastructure.Config;
 
 public class MongoDbConfig
 {

@@ -1,10 +1,10 @@
 using CQRS.Core.Domain;
 using CQRS.Core.Events;
-using CQRS.Core.Infrastructure.Config;
+using Post.Cmd.Infrastructure.Config;
 using Microsoft.Extensions.Options;
 using MongoDB.Driver;
 
-namespace CQRS.Core.Infrastructure.Repositories;
+namespace Post.Cmd.Infrastructure.Repositories;
 
 public class EventStoreRepository : IEventStoreRepository
 {
